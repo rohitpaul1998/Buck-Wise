@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1803372AD109E00057E479 /* ExpenseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1803362AD109E00057E479 /* ExpenseCardView.swift */; };
 		4CA774372AD083B00065A609 /* BuckWiseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA774362AD083B00065A609 /* BuckWiseApp.swift */; };
 		4CA774392AD083B00065A609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA774382AD083B00065A609 /* ContentView.swift */; };
 		4CA7743B2AD083B10065A609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA7743A2AD083B10065A609 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C1803362AD109E00057E479 /* ExpenseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCardView.swift; sourceTree = "<group>"; };
 		4CA774332AD083B00065A609 /* BuckWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuckWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA774362AD083B00065A609 /* BuckWiseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuckWiseApp.swift; sourceTree = "<group>"; };
 		4CA774382AD083B00065A609 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				4CA7744A2AD087E20065A609 /* ExpensesView.swift */,
 				4CA7744C2AD087F70065A609 /* CategoriesView.swift */,
 				4CA774502AD09A0E0065A609 /* AddExpenseView.swift */,
+				4C1803362AD109E00057E479 /* ExpenseCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				4CA774392AD083B00065A609 /* ContentView.swift in Sources */,
 				4CA7744F2AD08EEB0065A609 /* GroupedExpense.swift in Sources */,
 				4CA774512AD09A0E0065A609 /* AddExpenseView.swift in Sources */,
+				4C1803372AD109E00057E479 /* ExpenseCardView.swift in Sources */,
 				4CA7744D2AD087F70065A609 /* CategoriesView.swift in Sources */,
 				4CA774372AD083B00065A609 /* BuckWiseApp.swift in Sources */,
 				4CA7744B2AD087E20065A609 /* ExpensesView.swift in Sources */,
