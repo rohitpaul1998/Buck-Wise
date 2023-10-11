@@ -51,18 +51,30 @@ struct AddExpenseView: View {
                         
                         Spacer()
                         
-                        Picker("", selection: $category) {
-                            ForEach(allCategories) {
-                                Text($0.categoryName)
-                                    .tag($0)
+                        Menu { ///picker wasnt working as intended so i moved to the menu to achive the UI i needed.
+                            ForEach(allCategories) { category in
+                                Button(category.categoryName) {
+                                    self.category = category
+                                }
+                            }
+                            
+                            /// None button
+                            Button("None") {
+                                category = nil
+                            }
+                            
+                        } label: {
+                            if let categoryName = category?.categoryName {
+                                Text(categoryName)
+                            } else {
+                                Text("None")
                             }
                         }
-                        .pickerStyle(.menu)
-                        .labelsHidden()
                     }
                 }
             }
             .navigationTitle("Add Expense")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 /// Cancel and Add buttons
                 ToolbarItem(placement: .topBarLeading) {

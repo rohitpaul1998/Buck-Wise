@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ExpensesView: View {
+    @Binding var currentTab: String
     /// Grouped expenses properties - in order to create a separate grouped expense model
     /// and manually split the expenses based on day wise and display it for users.
     @Query(sort: [
@@ -68,12 +69,13 @@ struct ExpensesView: View {
             }
         }
         .onChange(of: allExpenses, initial: true) { oldValue, newValue in
-            if newValue.count > oldValue.count || groupedExpenses.isEmpty {
+            if newValue.count > oldValue.count || groupedExpenses.isEmpty || currentTab == "Categories" {
                 createGroupedExpenses(newValue)
             }
         }
         .sheet(isPresented: $addExpense) {
             AddExpenseView()
+                .interactiveDismissDisabled()
         }
     }
     /// Creating grouped expenses (Grouping by date)
@@ -107,5 +109,5 @@ struct ExpensesView: View {
 }
 
 #Preview {
-    ExpensesView()
+    ContentView()
 }
