@@ -25,4 +25,13 @@ class Expense {
         self.date = date
         self.category = category
     }
+    
+    /// Currency string
+    @Transient ///@Transient macro is used to avoid storing properties on disk
+    var currrencyString: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        
+        return formatter.string(for: amount) ?? ""
+    }
 }

@@ -14,6 +14,9 @@ struct CategoriesView: View {
                 
             }
             .navigationTitle("Categories")
+            
+            /// New category add button
+            
         }
     }
 }

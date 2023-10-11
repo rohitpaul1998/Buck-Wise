@@ -14,16 +14,35 @@ struct ExpensesView: View {
     @Query(sort: [
         SortDescriptor(\Expense.date, order: .reverse)
     ], animation: .snappy) private var allExpenses: [Expense]
+    @Environment(\.modelContext) private var context
     /// Grouped Expenses
     @State private var groupedExpenses: [GroupedExpenses] = []
     @State private var addExpense: Bool = false
     var body: some View {
         NavigationStack {
             List {
-                ForEach(groupedExpenses) { group in
+                ForEach($groupedExpenses) { $group in
                     Section(group.groupTitle) {
                         ForEach(group.expenses) { expense in
                             /// Card view
+                            ExpenseCardView(expense: expense)
+                                .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                                    /// Delete button
+                                    Button {
+                                        /// Deleting data
+                                        context.delete(expense)
+                                        withAnimation {
+                                            group.expenses.removeAll(where: { $0.id == expense.id})
+                                            /// Removing group, if no expenses present
+                                            if group.expenses.isEmpty {
+                                                groupedExpenses.removeAll(where: { $0.id == group.id})
+                                            }
+                                        }
+                                    } label: {
+                                        Image(systemName: "trash")
+                                    }
+                                    .tint(.red)
+                                }
                         }
                     }
                 }
@@ -36,7 +55,7 @@ struct ExpensesView: View {
                     }
                 }
             }
-            /// New category add button
+            /// New expense add button
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
@@ -49,7 +68,7 @@ struct ExpensesView: View {
             }
         }
         .onChange(of: allExpenses, initial: true) { oldValue, newValue in
-            if groupedExpenses.isEmpty {
+            if newValue.count > oldValue.count || groupedExpenses.isEmpty {
                 createGroupedExpenses(newValue)
             }
         }
