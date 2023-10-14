@@ -2,7 +2,7 @@
 BuckWise is an iOS app designed and developed to help you keep track of your daily expenses.
 Why stress when you can buckwisely spend every month? ;) 
 
-**DEMO: https://drive.google.com/file/d/1p-dYtxJCJgF0-_7Qvq1lQnq-lyWpTQku/view?usp=sharing **
+**DEMO: https://drive.google.com/file/d/1p-dYtxJCJgF0-_7Qvq1lQnq-lyWpTQku/view?usp=sharing**
 
 The development of this app can be broken down into 6 stages namely:
 - Sketching
