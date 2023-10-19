@@ -38,9 +38,7 @@ The initial design of BuckWise is tackled by utilizing Figma to create box-like 
 
 
 ## Final Design
-The final design for BuckWise looks like this:
-
-<br /><br />
+The final design for BuckWise looks like this: https://github.com/rohitpaul1998/Buck-Wise/blob/main/Final-Design.pdf<br /><br />
 
 ## Development
 
