@@ -41,9 +41,19 @@ The initial design of BuckWise is tackled by utilizing Figma to create box-like 
 The final design for BuckWise looks like this: [Final-Design.pdf](https://github.com/rohitpaul1998/Buck-Wise/blob/main/Final-Design.pdf)<br /><br />
 
 ## Development
-
-## User Testing
+Developed by yours truly :)  
+Tech stack: Swift5, Xcode15, SwiftUI, SwiftData, Figma
+Code is organized into Model and View. Please verify code here: [Source Code](https://github.com/rohitpaul1998/Buck-Wise/tree/main/BuckWise/BuckWise) 
 
 ## Go-Live
+BuckWise is officially an iOS App at the App Store!  
+Now you can download your simple expense tracker @ [App Store](https://apps.apple.com/us/app/buckwise/id6469586779)<br /><br />
+
+## User Testing
+First time users found the app to be:  
+1. Very user-friendly
+2. Simple yet neat design
+3. Simplifies tracking expenses
+4. Gives an Apple-like feel
 
 
