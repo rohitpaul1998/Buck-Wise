@@ -54,6 +54,12 @@ First time users found the app to be:
 1. Very user-friendly
 2. Simple yet neat design
 3. Simplifies tracking expenses
-4. Gives an Apple-like feel
+4. Gives an Apple-like feel<br /><br />
+
+## Customer Review
+My customers were happy with the entire UI and thought process that went into this app.<br /><br />
+<img src="https://github.com/rohitpaul1998/Buck-Wise/assets/113409553/deefcbc4-a070-4b37-be36-32832e8ab44d" width="610">
+
+
 
 
