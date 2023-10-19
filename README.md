@@ -38,6 +38,23 @@ The initial design of BuckWise is tackled by utilizing Figma to create box-like 
 
 
 ## Final Design
+The final design for BuckWise looks like this:
+
+Expenses view:
+
+![expenses-14promax](https://github.com/rohitpaul1998/Buck-Wise/assets/113409553/d5169b0b-f868-49bf-bb0d-f3ff29dd4645)<br /><br />
+
+Add expenses view:
+
+![expense-creation-14promax](https://github.com/rohitpaul1998/Buck-Wise/assets/113409553/40bf9a6b-a4d1-47b6-aa76-98133ee37ad0)<br /><br />
+
+Categories view:
+
+![categories-14promax](https://github.com/rohitpaul1998/Buck-Wise/assets/113409553/ef4b8387-8417-4e46-9099-7ef6f6067780)<br /><br />
+
+Add categories view:
+
+![category-creation-14promax](https://github.com/rohitpaul1998/Buck-Wise/assets/113409553/ea62d354-d82b-4519-9ca1-48de67d64479)<br /><br />
 
 ## Development
 
