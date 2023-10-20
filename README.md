@@ -42,7 +42,7 @@ The final design for BuckWise looks like this: [Final-Design.pdf](https://github
 
 ## Development
 Developed by yours truly :)  
-Tech stack: Swift5, Xcode15, SwiftUI, SwiftData, Figma
+Tech stack: Swift5, Xcode15, SwiftUI, SwiftData, Figma  
 Code is organized into Model and View. Please verify code here: [Source Code](https://github.com/rohitpaul1998/Buck-Wise/tree/main/BuckWise/BuckWise) 
 
 ## Go-Live
